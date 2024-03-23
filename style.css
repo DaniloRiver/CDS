@@ -1,5 +1,17 @@
 body{
-    background:linear-gradient(90deg,#204243,#377970 50%,#204243);
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+  
+  
+  
+}
+#header{
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); 
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
 }
 
 
@@ -15,7 +27,8 @@ body{
 }
 
 #main{
-    margin-top: 85px;
+    margin-top: 75px;
+    color: white;
 }
 
 .btn-adegea{
@@ -100,7 +113,10 @@ body{
     transition: transform 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
     /* background:#30523f; */
-    background:linear-gradient(90deg,#204243,#377970 50%,#204243);
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50); 
+    background: linear-gradient(to right, #4CA1AF, #2C3E50);
+
   }
   
   .card:hover {
@@ -230,4 +246,37 @@ body{
     padding-bottom: 0.15em;
     text-align: center; /* Alineación de texto centrada */
     white-space: nowrap; /* Evitar que el texto se desborde en pantallas pequeñas */
+  }
+
+  #bodyM {
+    margin: 0;
+    overflow: hidden;
+    perspective: 1000px; /* Establece la perspectiva */
+  }
+
+
+  .planet {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/800px-The_Earth_seen_from_Apollo_17.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(0deg); /* Posición inicial y rotación */
+    animation: rotatePlanet 20s linear infinite; /* Animación de rotación */
+  }
+
+  @keyframes rotatePlanet {
+    from {
+      transform: translate(-50%, -50%) rotateY(0deg); /* Rotación inicial */
+    }
+    to {
+      transform: translate(-50%, -50%) rotateY(360deg); /* Rotación completa */
+    }
+  }
+  .img-fluid{
+    width: 500px;
+    height: 500px;
   }
