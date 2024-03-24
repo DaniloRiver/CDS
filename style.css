@@ -9,9 +9,10 @@ body{
   
 }
 #header{
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); 
-  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 
@@ -74,8 +75,10 @@ body{
 }
 
 #place-time{
-    background-color: #133637;
-    color: white;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  color: white;
 }
 
 #place-time img{
@@ -90,17 +93,24 @@ body{
 #place-time1{
   background-color: #133637;
   color: white;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #place-time1 img{
   padding-top: 40px;
   padding-left: 4px;
-  max-width: 90%;
-  max-height: 120%;
+  max-width: 70%;
+  max-height: 90%;
 }
 
 #footer{
-    background: linear-gradient(90deg,#204243,#377970 50%,#204243);
+  background: #373B44;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 #footer a{
