@@ -10,6 +10,8 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar" data-offset="75px">
@@ -72,34 +74,38 @@
                   <div class="ntn-box pt-3">
                     <a href="#conviertete-orador" class="btn btn-outline-light1"  data-bs-spy="scroll" data-bs-target="#info" data-offset="75px">Contáctame</a>
                     
-                    <div class="col-12 col-lg mt-3 ms-2" >
-                      <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                          <a href="#">
-                            <i class="fa fa-facebook-square" aria-hidden="true" style="color: #00abf0;"></i>
-                          </a>
-                        </li>
-                        <li class="list-inline-item">
-                          <a href="#">
-                            <i class="fab fa-twitter" style="color: #00abf0;"></i>
-                          </a>
-                        </li>
-                        <li class="list-inline-item">
-                          <a href="#">
-                            <i class="fa-brands fa-whatsapp" style="color: #00abf0;"></i>
-                          </a>
-                        </li>
-                        <li class="list-inline-item">
-                          <a href="#">
-                            <i class="fa-solid fa-phone" style="color: #00abf0;"></i>
-                          </a>
-                        </li>
-                        <li class="list-inline-item">
-                          <a href="#">
-                            <i class="fa-solid fa-envelope" style="color: #00abf0;"></i>
-                          </a>
-                        </li>
-                      </ul>
+                    <div class="container">
+                      <div class="row text-center">
+                        <div class="col-12 col-lg">
+                          <ul class="list-inline social-buttons">
+                            <li class="list-inline-item">
+                              <a href="https://www.facebook.com/profile.php?id=61551650954163">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="#modalCompra" data-bs-toggle="modal" data-bs-target="#modalCompra">
+                                <i class="fab fa-twitter"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="#modalCompra" data-bs-toggle="modal" data-bs-target="#modalCompra">
+                                <i class="fa-brands fa-whatsapp"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="#modalCompra" data-bs-toggle="modal" data-bs-target="#modalCompra">
+                                <i class="fa-solid fa-phone"></i>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="mailto:gerenciaadegea@gmail.com">
+                                <i class="fa-solid fa-envelope"></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                 </div>
                   </div>
@@ -335,7 +341,7 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card">
               <img
-                src="assets/speakers/9.png"
+                src="assets/images/montana1 (1).jpg"
                 class="card-img-top"
                 alt="foto sacha"
               />
@@ -358,7 +364,7 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card">
               <img
-                src="assets/speakers/12.png"
+                src="assets/images/montana1 (2).jpg"
                 class="card-img-top"
                 alt="foto sacha"
               />
@@ -382,7 +388,7 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card">
               <img
-                src="assets/speakers/img-1.png"
+                src="assets/images//montana1 (3).jpg"
                 class="card-img-top"
                 alt="foto sacha"
               />
@@ -403,7 +409,7 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card">
               <img
-                src="assets/speakers/13.png"
+                src="assets/images//campo2.jpg"
                 class="card-img-top"
                 alt="foto sacha"
               />
@@ -426,7 +432,7 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card">
               <img
-                src="assets/speakers/14.png"
+                src="assets/images/campo4.jpg"
                 class="card-img-top"
                 alt="foto sacha"
               />
@@ -501,7 +507,26 @@
       <!--Lugar y fecha-->
 
   
-    <!--Conviertete en speaker-->
+      <section class="mt-5">
+        <div id="contenedor-mapas" >
+          <div class="row">
+            <div id="direccion" class="col-12 col-lg-6 ps-0 pe-0">
+                <h2 class="mb-3">Ubicación</h2>
+                <p style="font-size: medium;padding-top: 1px;color: white;">
+                    CDS Consultores está ubicado en el Barrio La Hoya, 1era calle, 1era Avenida, Casa No. 808,
+                    frente a Edificio de Apartamentos Rodelis, Tegucigalpa M.D.C., Honduras.
+                </p>
+            </div>
+            <!-- <div class="col-12 col-lg-6 pt-4 pb-4"> -->
+                <div id="map"></div>
+            <!-- </div> -->
+        </div>
+        </div>      
+      </section>
+      
+    
+    
+
 
     <!--Footer -->
     <footer id="footer" class="py-4">
