@@ -77,3 +77,13 @@ var zoomLevel = 28;
 // Aplica los nuevos estilos a la capa
 myLayer.setStyle(nuevoEstilo);
 myLayer.setZoom(zoomLevel);
+
+  // Función para detener la animación de rotación cuando el cursor está sobre la tarjeta
+function stopRotation(card) {
+    card.style.transition = 'none';
+}
+
+// Función para reanudar la animación de rotación cuando el cursor sale de la tarjeta
+function resumeRotation(card) {
+    card.style.transition = 'transform 0.8s';
+}
