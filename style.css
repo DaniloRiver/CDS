@@ -290,6 +290,12 @@ body{
     height: 200px;
   }
 
+  .logo-institucional {
+    max-height: 200px;
+    width: auto;
+    height: auto;
+  }
+
   #contenedor-mapas {
     display: flex;
     justify-content: center;
